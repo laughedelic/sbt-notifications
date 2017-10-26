@@ -6,6 +6,17 @@ import java.nio.charset.StandardCharsets
 import scala.xml._
 import scala.sys.process._
 
+trait Notifier {
+  def notify(title: String, message: String) : Unit
+
+  def isAvailable : Boolean
+}
+
+object NullNotifier extends Notifier {
+  def notify(title: String, message: String) = {}
+  def isAvailable = true
+}
+
 object ToastNotifier extends Notifier {
   override def isAvailable = System.getProperty("os.name").startsWith("Windows")
   

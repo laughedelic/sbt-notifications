@@ -5,17 +5,6 @@ import testing._
 import java.io.ByteArrayInputStream
 import java.nio.charset.StandardCharsets
 
-trait Notifier {
-  def notify(title: String, message: String) : Unit
-
-  def isAvailable : Boolean
-}
-
-object NullNotifier extends Notifier {
-  def notify(title: String, message: String) = {}
-  def isAvailable = true
-}
-
 class NotifierTestListener(val projectName: String, val onlyFailure: Boolean = false) extends TestsListener {
   private var errorCount, passedCount, ignoredCount, failedCount, pendingCount = 0
 
