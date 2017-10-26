@@ -1,5 +1,9 @@
 # sbt-notifications
 
+[![](https://travis-ci.org/laughedelic/sbt-notifications.svg?branch=master)](https://travis-ci.org/laughedelic/sbt-notifications)
+[![](https://img.shields.io/github/release/laughedelic/sbt-notifications/all.svg)](https://github.com/laughedelic/sbt-notifications/releases/latest)
+[![](https://img.shields.io/badge/license-Apache_2.0-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
+
 A simple sbt-1.x plugin that sends native OS notifications when tests are completed. Uses Toast notifications on Windows (tested on Windows 10), Notification Center on Mac OS X (tested on Mac OS X Yosemite) and `libnotify` on Linux (requires `libnotify-bin` package, tested on Ubuntu with Gnome).
 
 > NOTE: This is a fork. Original repository is https://github.com/PavelPenkov/sbt-notifications
