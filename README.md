@@ -24,7 +24,9 @@ By default you will get notifications on test runs: when they fail and when they
 notifyFailureOnly := true
 ```
 
-in build definition.
+in build definition. Here's an example:
+
+![screen shot 2017-10-26 at 11 48 47](https://user-images.githubusercontent.com/766656/32054626-4a11f29a-ba5f-11e7-8c7d-dc0e12468c3a.png)
 
 
 ### Tasks completion notifications
@@ -34,5 +36,15 @@ You can also configure the plugin to get notified on completion of a particular 
 ```scala
 notifyOn(compile in Compile)
 ```
+
+![screen shot 2017-10-22 at 05 22 23](https://user-images.githubusercontent.com/766656/31857876-076de4c2-b6e9-11e7-9f47-5434e31c4606.png)
+
+Or
+
+```scala
+notifyOn(compile in Test)
+```
+
+![screen shot 2017-10-22 at 05 22 08](https://user-images.githubusercontent.com/766656/31857878-0cde1076-b6e9-11e7-9acd-c659cd85f9d2.png)
 
 <!-- TODO: explain how to change notification formatting -->
