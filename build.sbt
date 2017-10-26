@@ -20,3 +20,4 @@ scriptedLaunchOpts ++= Seq(
 bintrayReleaseOnPublish := !isSnapshot.value
 bintrayPackageLabels := Seq("sbt", "notifications")
 publishTo := (publishTo in bintray).value
+publishMavenStyle := false
