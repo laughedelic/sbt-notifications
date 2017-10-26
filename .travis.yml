@@ -1,7 +1,7 @@
 sudo: false
 language: scala
 jdk: oraclejdk8
-script: sbt ++$TRAVIS_SCALA_VERSION scripted
+script: sbt ++$TRAVIS_SCALA_VERSION compile
 # These directories are cached to S3 at the end of the build
 cache:
   directories:
